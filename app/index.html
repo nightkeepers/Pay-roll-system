@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PayRoll system</title>
+  <link href='styles/app.css' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>LJM's PayRoll system</h1>
+  <h2>李佳铭 16340115</h2>
+  <p>There are <span class="black"><span id="totalemployees"></span> employees</span></p>
+  <p>Balance: <span class="black"><span id="balance"></span> ether</span></p>
+  <p>Balance Enough for: <span class="black"><span id="enough"></p>
+  <br>
+  <!--br><label for="account">account:</label><input type="text" id="account" placeholder="10"></input-->
+  <br><label for="salary">salary:</label><input type="text" id="salary" placeholder="10"></input>
+  <br><label for="bonus">bonus:</label><input type="text" id="bonus" placeholder="10"></input>
+  <br><label for="employee">employee:</label><input type="text" id="employee" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+  <br><label for="amount">amount:</label><input type="text" id="amount" placeholder="10"></input>
+  <br><label for="past"> past:</label><input type="text" id="past" placeholder="100"></input>
+  <br>
+  <br>
+  <div>
+  <button id="addEmployee" onclick="App.addEmployee()">add employee</button>
+  <button id="removeEmployee" onclick="App.removeEmployee()">remove employee</button>
+  <button id="updateEmployee" onclick="App.updateEmployee()">update employee</button>
+  <button id="addBonus" onclick="App.addBonus()">add bonus</button>
+  </div>
+  <div>
+  <button id="getEmployee" onclick="App.getEmployee()">get employee</button>
+  <button id="addFund" onclick="App.addFund()">add balance</button>
+  <button id="getPaid" onclick="App.getPaid()">get paid</button>
+  <button id="getBonus" onclick="App.getBonus()">get bonus</button>
+  </div>
+  <br>
+  <span id="status"></span>
+  <br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>
